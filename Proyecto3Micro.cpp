@@ -15,7 +15,7 @@ using namespace std;
 /*
     funcion que calcula el factorial de un nimero
 */
-// funcion que calcula el factorial de un nimero
+
 float fact(int n) {
 	if (n < 0)
 		return -1; // en caso que el numero sea menor que 0, regresa un -1
@@ -41,7 +41,9 @@ void euler1(){
     }
     cout<<"\nel valor aproximado de e en base a su numero "<<s<<" es "<<e<<endl;
 }
-
+/*
+    El valor de convergencia de la serie (para n inicia en 1,)
+*/
 void seriesB(){
     //variables para convergencia
 	double conv= 0;
@@ -65,6 +67,9 @@ void seriesB(){
 	//Se muestran los valores originales y redondeados
 	cout<<"El valor de convergencia aproximado con"<<n<<" es "<<conv<<"\n";
 }
+/*
+    El valor de convergencia de la serie (para n inicia en 1)
+*/
 void serieC(){
     int hilos;
 	double conv=0;
@@ -88,7 +93,7 @@ void serieC(){
 	    	printf("Por el teorema la serie diverge\n");
 	    }
     	else{
-	    	printf("La serie es potencialmente convergente\n");
+	    	printf("La serie es convergente\n");
 	    }
 	
 	    printf( "Ingrese el numero al cual quiere obtener su valor de convergencia aproximado\n" );
